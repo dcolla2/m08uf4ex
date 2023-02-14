@@ -22,7 +22,7 @@ public class m08uf4ex {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        File f = new File("m08uf4ex_20220209.html");
+        File f = new File("m08uf4ex_20230215.html");
           try (BufferedWriter bw = new BufferedWriter(new FileWriter(f))) {
                 bw.write("<html>");bw.newLine();
                 bw.write("  <head>");bw.newLine();
@@ -43,8 +43,7 @@ public class m08uf4ex {
                 bw.write("     Versió del sistema operatiu: ");bw.write(System.getProperty("os.version"));
                 bw.write("  </body>");bw.newLine();
                 bw.write("</html>");bw.newLine();
-                bw.close();              
+                bw.close();
           }
     }
-    
 }
